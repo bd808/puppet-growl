@@ -11,8 +11,8 @@ class growl_fork {
   }
 
   package { 'Growl Notify':
-    source   => 'https://bitbucket.org/PeteMS/growl-fork/downloads/growlnotify.pkg',
-    provider => 'pkg',
+    source   => 'https://bitbucket.org/PeteMS/growl-fork/downloads/growlnotify.dmg',
+    provider => 'pkgdmg',
     require  => Package['Growl Fork']
   }
 
