@@ -7,6 +7,6 @@
 class growl_fork {
   package { 'Growl Fork':
     source   => 'https://bitbucket.org/pmetzger/growl/downloads/Growl-1.2.2f1.dmg',
-    provider => 'appdmg'
+    provider => 'pkgdmg'
   }
 }
