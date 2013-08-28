@@ -2,10 +2,12 @@
 
 Install the dev fork of [Growl](https://bitbucket.org/pmetzger/growl), a Mac notification tool.
 
+[![Build Status](https://travis-ci.org/bd808/puppet-growl.png?branch=master)](https://travis-ci.org/bd808/puppet-growl)
+
 ## Usage
 
 ```puppet
-include growl_fork
+include growl
 ```
 
 ## Required Puppet Modules

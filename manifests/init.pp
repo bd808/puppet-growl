@@ -3,17 +3,17 @@
 #
 # Examples
 #
-#   include growl_fork
-class growl_fork {
+#   include growl
+class growl {
   package { 'Growl Fork':
     source   => 'https://bitbucket.org/pmetzger/growl/downloads/Growl-1.2.2f1.dmg',
-    provider => 'pkgdmg'
+    provider => 'pkgdmg',
   }
 
-  package { 'Growl Notify':
-    source   => 'https://bitbucket.org/PeteMS/growl-fork/downloads/growlnotify.pkg',
-    provider => 'pkg',
-    require  => Package['Growl Fork']
+  package { 'Growl Fork Notify':
+    source   => 'https://bitbucket.org/PeteMS/growl-fork/downloads/growlnotify.dmg',
+    provider => 'pkgdmg',
+    require  => Package['Growl Fork'],
   }
 
 }
